@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import AudioWave from '@/components/AudioWave';
+import sargamLogo from '@/media/sargam.png';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -55,17 +55,17 @@ const Header: React.FC = () => {
             onClick={(e) => { e.preventDefault(); scrollTo('#home'); }}
             className="flex items-center gap-2 group"
           >
-            <AudioWave
-              barClassName={scrolled ? 'bg-sage' : 'bg-white'}
-              animated={false}
-              className="h-4"
+            <img 
+              src={sargamLogo} 
+              alt="Sargam Musicals Logo" 
+              className="h-8 w-auto object-contain"
             />
             <span
               className={`font-serif text-xl lg:text-2xl font-medium tracking-tight transition-colors duration-300 ${
                 scrolled ? 'text-charcoal' : 'text-white'
               }`}
             >
-              Sargam Musicals
+              {/* Sargam Musicals */}
             </span>
           </a>
 

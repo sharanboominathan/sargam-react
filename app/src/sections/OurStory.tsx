@@ -43,7 +43,7 @@ const OurStory: React.FC = () => {
           {/* Image Column */}
           <div ref={imageRef} className="relative overflow-hidden rounded-xl aspect-[3/4] lg:aspect-auto lg:h-[640px]">
             <img
-              src="/founder-prakash.jpg"
+              src={`${import.meta.env.BASE_URL}founder-prakash.jpg`}
               alt="Prakash Sathiyadharan crafting instruments in his workshop"
               className="w-full h-full object-cover"
               loading="lazy"

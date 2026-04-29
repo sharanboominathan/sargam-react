@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="hero-bg absolute inset-0">
         <img
-          src="/hero-bg.jpg"
+          src={`${import.meta.env.BASE_URL}hero-bg.jpg`}
           alt="Auroville craftsman workshop with lush greenery"
           className="w-full h-full object-cover"
         />

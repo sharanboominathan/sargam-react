@@ -1,5 +1,6 @@
 import React from 'react';
 import AudioWave from '@/components/AudioWave';
+import sargamLogo from '@/media/sargam.png';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const footerLinks = [
@@ -28,8 +29,12 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="footer-col">
             <div className="flex items-center gap-2 mb-4">
-              <AudioWave barClassName="bg-sage" animated={false} className="h-4" />
-              <span className="font-serif text-xl text-white">Sargam Musicals</span>
+              <img 
+                src={sargamLogo} 
+                alt="Sargam Musicals Logo" 
+                className="h-8 w-auto object-contain"
+              />
+              {/* <span className="font-serif text-xl text-white">Sargam Musicals</span> */}
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               Handcrafted sound healing instruments from Auroville, India
