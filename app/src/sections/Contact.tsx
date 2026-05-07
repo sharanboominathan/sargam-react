@@ -81,8 +81,13 @@ const Contact: React.FC = () => {
                 </div>
               </a>
 
-              <div className="flex items-start gap-4">
-                <div className="w-11 h-11 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0">
+              <a
+                href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x3a5367132719a859:0xb297043a2c5a42a4!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-4 group"
+              >
+                <div className="w-11 h-11 rounded-lg bg-sage/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sage/20 transition-colors">
                   <MapPin className="w-5 h-5 text-sage" />
                 </div>
                 <div>
@@ -93,7 +98,7 @@ const Contact: React.FC = () => {
                     Auroville, Puducherry-605111, India
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Social Links */}
@@ -216,13 +221,18 @@ const Contact: React.FC = () => {
             </form>
 
             {/* Map Placeholder */}
-            <div className="mt-8 aspect-video rounded-xl overflow-hidden bg-sage/10 flex items-center justify-center relative">
+            <a 
+              href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x3a5367132719a859:0xb297043a2c5a42a4!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 aspect-video rounded-xl overflow-hidden bg-sage/10 flex items-center justify-center relative hover:bg-sage/20 transition-colors cursor-pointer block"
+            >
               <div className="text-center">
                 <MapPin className="w-8 h-8 text-sage/40 mx-auto mb-2" />
                 <p className="text-sage font-medium">Auroville, India</p>
                 <p className="text-warmgray text-xs mt-1">Puducherry-605111</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

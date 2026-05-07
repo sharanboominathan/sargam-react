@@ -81,8 +81,15 @@ const Footer: React.FC = () => {
                   sargammusicalinstrument@gmail.com
                 </a>
               </li>
-              <li className="text-white/60">
-                Auroville, Puducherry, India
+              <li>
+                <a
+                  href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x3a5367132719a859:0xb297043a2c5a42a4!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  Auroville, Puducherry, India
+                </a>
               </li>
             </ul>
           </div>
