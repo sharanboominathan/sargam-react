@@ -1,5 +1,5 @@
 import React from 'react';
-import AudioWave from '@/components/AudioWave';
+
 import sargamFooterLogo from '@/media/sargam footer.png';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
