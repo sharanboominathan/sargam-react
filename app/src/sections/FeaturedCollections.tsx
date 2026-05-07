@@ -2,32 +2,37 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
+import imgChimes from '@/media/Products/Swinging_chimes_9_bars-removebg-preview.png';
+import imgDrums from '@/media/Products/Frame-drum-bg-removed.png';
+import imgOutdoor from '@/media/Products/Xylophone-removebg-preview.png';
+import imgBeginner from '@/media/Products/Clay_ocarina-removebg-preview1.png';
+
 const collections = [
   {
     title: 'Chimes for Meditation',
     description: 'Hand-tuned aluminum chimes for meditation and sound baths',
-    image: '/product-chimes.jpg',
+    image: imgChimes,
     badge: 'Most Popular',
     badgeColor: 'bg-terracotta',
   },
   {
     title: 'Drums for Healing Circles',
     description: 'West African inspired drums for group ceremonies',
-    image: '/product-drum.jpg',
+    image: imgDrums,
     badge: null,
     badgeColor: '',
   },
   {
     title: 'Outdoor Musical Gardens',
     description: 'Weather-resistant instruments for parks and schools',
-    image: '/product-outdoor.jpg',
+    image: imgOutdoor,
     badge: null,
     badgeColor: '',
   },
   {
     title: "Beginner's Collection",
     description: 'Start your sound healing journey with curated starter sets',
-    image: '/product-beginner.jpg',
+    image: imgBeginner,
     badge: 'Staff Pick',
     badgeColor: 'bg-teal',
   },

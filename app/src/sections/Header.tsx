@@ -42,11 +42,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 h-16 lg:h-[72px] transition-all duration-500 ${
-          scrolled
-            ? 'bg-cream/92 backdrop-blur-xl border-b border-warmborder shadow-sm'
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 h-16 lg:h-[72px] transition-all duration-500 bg-white/50 backdrop-blur-md border-b border-warmborder shadow-sm`}
       >
         <div className="content-container h-full flex items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
@@ -58,12 +54,10 @@ const Header: React.FC = () => {
             <img 
               src={sargamLogo} 
               alt="Sargam Musicals Logo" 
-              className="h-8 w-auto object-contain"
+              className="h-12 lg:h-14 w-auto object-contain"
             />
             <span
-              className={`font-serif text-xl lg:text-2xl font-medium tracking-tight transition-colors duration-300 ${
-                scrolled ? 'text-charcoal' : 'text-white'
-              }`}
+              className={`font-serif text-xl lg:text-2xl font-medium tracking-tight transition-colors duration-300 text-charcoal`}
             >
               {/* Sargam Musicals */}
             </span>
@@ -77,13 +71,9 @@ const Header: React.FC = () => {
                 href={link.href}
                 onClick={(e) => { e.preventDefault(); scrollTo(link.href); }}
                 className={`relative text-sm font-medium uppercase tracking-[0.05em] transition-colors duration-300 group ${
-                  scrolled
-                    ? activeSection === link.href.slice(1)
-                      ? 'text-sage'
-                      : 'text-charcoal hover:text-sage'
-                    : activeSection === link.href.slice(1)
+                  activeSection === link.href.slice(1)
                     ? 'text-sage'
-                    : 'text-white/80 hover:text-white'
+                    : 'text-charcoal hover:text-sage'
                 }`}
               >
                 {link.label}
@@ -104,9 +94,7 @@ const Header: React.FC = () => {
               href="https://wa.me/919360666448"
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-2 rounded-full transition-colors duration-300 ${
-                scrolled ? 'text-charcoal hover:text-sage' : 'text-white/80 hover:text-white'
-              }`}
+              className={`p-2 rounded-full transition-colors duration-300 text-charcoal hover:text-sage`}
               aria-label="WhatsApp"
             >
               <Phone className="w-5 h-5" />
@@ -119,9 +107,7 @@ const Header: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`lg:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? 'text-charcoal' : 'text-white'
-            }`}
+            className={`lg:hidden p-2 rounded-lg transition-colors text-charcoal`}
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

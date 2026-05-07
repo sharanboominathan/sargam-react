@@ -1,6 +1,6 @@
 import React from 'react';
 import AudioWave from '@/components/AudioWave';
-import sargamLogo from '@/media/sargam.png';
+import sargamFooterLogo from '@/media/sargam footer.png';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const footerLinks = [
@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
           <div className="footer-col">
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src={sargamLogo} 
+                src={sargamFooterLogo} 
                 alt="Sargam Musicals Logo" 
-                className="h-8 w-auto object-contain"
+                className="h-16 md:h-20 w-auto object-contain"
               />
               {/* <span className="font-serif text-xl text-white">Sargam Musicals</span> */}
             </div>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Play, X } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
+const YOUTUBE_ID = 'Hv2hdY0v0L8';
+
 const SoundHealing: React.FC = () => {
   const [showVideo, setShowVideo] = useState(false);
   const sectionRef = useScrollReveal<HTMLDivElement>({ direction: 'fade', duration: 1 });
@@ -22,8 +24,8 @@ const SoundHealing: React.FC = () => {
             onClick={() => setShowVideo(true)}
           >
             <img
-              src="/video-thumbnail.jpg"
-              alt="Sound healing session with gong and singing bowls"
+              src={`https://img.youtube.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`}
+              alt="Sound healing session with Sargam instruments"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
             />
@@ -48,7 +50,7 @@ const SoundHealing: React.FC = () => {
           </blockquote>
           <p className="text-white/60 text-sm mb-8">— Prakash Sathiyadharan, Founder</p>
 
-          <a href="#programs" className="inline-flex items-center justify-center px-8 py-3.5 bg-white text-forest text-sm font-semibold uppercase tracking-wider rounded-lg transition-all duration-300 hover:bg-sage-light hover:shadow-lg min-h-[48px]">
+          <a href="#contact" className="inline-flex items-center justify-center px-8 py-3.5 bg-white text-forest text-sm font-semibold uppercase tracking-wider rounded-lg transition-all duration-300 hover:bg-sage-light hover:shadow-lg min-h-[48px]">
             Book a Healing Session
           </a>
         </div>
@@ -68,10 +70,16 @@ const SoundHealing: React.FC = () => {
             <X className="w-8 h-8" />
           </button>
           <div
-            className="w-full max-w-4xl aspect-video bg-charcoal rounded-xl flex items-center justify-center"
+            className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <p className="text-white/50 text-lg">Video content coming soon</p>
+            <iframe
+              src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1&rel=0`}
+              title="Sargam Musicals — Sound Healing"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
           </div>
         </div>
       )}
