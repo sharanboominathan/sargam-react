@@ -7,6 +7,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 export default defineConfig({
   base: '/sargam-react/',
   plugins: [inspectAttr(), react()],
+  assetsInclude: ['**/*.mpeg'],
   server: {
     port: 3000,
   },

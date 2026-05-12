@@ -3,9 +3,9 @@ import { ArrowRight } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 import imgChimes from '@/media/Products/Swinging_chimes_9_bars-removebg-preview.png';
-import imgDrums from '@/media/Products/Frame-drum-bg-removed.png';
+import imgDrums from '@/media/Products/Frame drum bg removed.png';
 import imgOutdoor from '@/media/Products/Xylophone-removebg-preview.png';
-import imgBeginner from '@/media/Products/Clay_ocarina-removebg-preview1.png';
+import imgBeginner from '@/media/Products/Clay_ocarina-removebg-preview(1).png';
 
 const collections = [
   {
