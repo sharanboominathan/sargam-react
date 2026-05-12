@@ -38,6 +38,10 @@ import imgShruthiThaali from '@/media/Products/Shruthi thaali set.png';
 import imgPulseTubeBlack from '@/media/Products/Pulse tube black - Copy.png';
 import imgPulseTubeSetBlack from '@/media/Products/Pulse tube set (black).png';
 import imgPulseTubeSetSilver from '@/media/Products/Pulse tube set silver.png';
+import imgOceanDrum from '@/media/Products/Ocean drum.png';
+import imgOhmChimes from '@/media/Products/Ohm-removebg-preview.png';
+import imgRodChimes from '@/media/Products/RC-removebg-preview.png';
+import imgRotatingChimes from '@/media/Products/rotating_chimes-removebg-preview.png';
 
 // Audio files
 import audioSwingingChimes6 from '@/media/Audio/Swinging chimes 6 bars.mpeg';
@@ -58,6 +62,10 @@ import audioSwaramandalam from '@/media/Audio/Svaramandal.mpeg';
 import audioStormDrumBlue from '@/media/Audio/Storm drum small.mpeg';
 import audioPulseTube from '@/media/Audio/Pulse tubes.mpeg';
 import audioPulseTubeSet from '@/media/Audio/Pulse tubes - set.mpeg';
+import audioOceanDrum from '@/media/Audio/Ocean drum large.mpeg';
+import audioOhmChimes from '@/media/Audio/Ohm chimes 1 inch.mpeg';
+import audioRodChimes from '@/media/Audio/Rod chimes 8 mm.mpeg';
+import audioRotatingChimes from '@/media/Audio/Rotating chimes.mpeg';
 
 const categories = ['All', 'Chimes', 'Drums', 'Flutes', 'Rattles', 'Outdoor', 'Healing'];
 
@@ -102,6 +110,11 @@ const products = [
   { name: 'Pulse Tube (Black)', category: 'Healing', price: 'From ₹2,200', image: imgPulseTubeBlack, badge: 'In Stock', audio: audioPulseTube },
   { name: 'Pulse Tube Set (Black)', category: 'Healing', price: 'From ₹5,500', image: imgPulseTubeSetBlack, badge: 'In Stock', audio: audioPulseTubeSet },
   { name: 'Pulse Tube Set (Silver)', category: 'Healing', price: 'From ₹5,500', image: imgPulseTubeSetSilver, badge: 'In Stock', audio: audioPulseTubeSet },
+  // New products
+  { name: 'Ocean Drum (Large)', category: 'Drums', price: 'Request Quote', image: imgOceanDrum, badge: 'Made to Order', audio: audioOceanDrum },
+  { name: 'Ohm Chimes', category: 'Chimes', price: 'From ₹1,800', image: imgOhmChimes, badge: 'In Stock', audio: audioOhmChimes },
+  { name: 'Rod Chimes', category: 'Chimes', price: 'From ₹2,200', image: imgRodChimes, badge: 'In Stock', audio: audioRodChimes },
+  { name: 'Rotating Chimes', category: 'Chimes', price: 'From ₹3,500', image: imgRotatingChimes, badge: 'In Stock', audio: audioRotatingChimes },
 ];
 
 const ProductShowcase: React.FC = () => {
